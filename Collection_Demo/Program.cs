@@ -22,6 +22,8 @@ namespace Collection_Demo
                 Console.WriteLine("Choose the below option");
                 Console.WriteLine("1 - List");
                 Console.WriteLine("2 - Array");
+                Console.WriteLine("3 - Array_List");
+                Console.WriteLine("4 - Dictionary");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -33,6 +35,16 @@ namespace Collection_Demo
                         Array_Demo array_Demo = new Array_Demo();
                         array_Demo.Add();
                         break;
+                    case 3:
+                        Array_List array_List = new Array_List();
+                        array_List.MyArray();
+                        break;
+                    case 4:
+                        Dictionary_Demo dictionary_Demo = new Dictionary_Demo();
+                        dictionary_Demo.Diction();
+                        break;
+
+                       
                 }
             }
         }
